@@ -1,12 +1,12 @@
 package main
 
 import (
-	"fmt"
-
-	"github.com/hmarf/sample_interface/sub"
+	"github.com/hmarf/sample_interface/down"
+	"github.com/hmarf/sample_interface/up"
 )
 
 func main() {
-	sub := sub.NewSub()
-	fmt.Println(sub.Sub())
+	down := down.NewDown()
+	up := up.NewUp(down)
+	up.Up()
 }
