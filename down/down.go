@@ -1,18 +1,9 @@
 package down
 
-import "fmt"
+import (
+	"fmt"
+)
 
-type downstruct struct {
-}
-
-type DownInterface interface {
-	Down()
-}
-
-func NewDown() DownInterface {
-	return &downstruct{}
-}
-
-func (up *downstruct) Down() {
+func Down() {
 	fmt.Println("down")
 }
